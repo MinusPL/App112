@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/ecec592c-74f8-a46e-3f84-aab3a31bd02c.htm" />
+    <HelpKINode Title="about App class" Url="html/ecec592c-74f8-a46e-3f84-aab3a31bd02c.htm" />
+    <HelpKINode Title="constructor" Url="html/20dedcd4-012f-d6a8-27af-e386b92982d7.htm" />
+    <HelpKINode Title="methods" Url="html/831052ac-3a6e-1103-9afa-e485cefb0e8d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/20dedcd4-012f-d6a8-27af-e386b92982d7.htm" />
+  <HelpKINode Title="App.GetMessageDependency method" Url="html/6e67e3af-d2f5-b2ce-310e-0c0ff545798e.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/15f4af54-1d5a-2263-77e9-de13fdb285ba.htm" />
+  <HelpKINode Title="App.OnResume method" Url="html/eab315b1-fba8-310a-b71e-2e94e28fccad.htm" />
+  <HelpKINode Title="App.OnSleep method" Url="html/813d9a9a-117a-7953-5842-f9f6b19945f1.htm" />
+  <HelpKINode Title="App.OnStart method" Url="html/4532e32c-0ff5-4d87-063f-da1d3e69c401.htm" />
+  <HelpKINode Title="App.ShowMessage method" Url="html/0a4e8d64-51f8-1b1a-f486-4d3d9cdd3bbf.htm" />
+  <HelpKINode Title="App.__InitComponentRuntime method" Url="html/32d8f97a-1e9e-1bec-7e2d-41e8e00ded51.htm" />
+  <HelpKINode Title="App112 namespace" Url="html/6e9f0d5e-e075-fbbf-1b32-1775ec9d990b.htm" />
+  <HelpKINode Title="App112.App class" Url="html/ecec592c-74f8-a46e-3f84-aab3a31bd02c.htm" />
+  <HelpKINode Title="App112.ImageButton class" Url="html/2bf3f3b6-a720-c986-27c1-f6bef3c477e4.htm" />
+  <HelpKINode Title="App112.IMessage interface" Url="html/d8651ee2-56d3-9f47-ce1d-66c0c3d3302c.htm" />
+  <HelpKINode Title="App112.ISMSHandler interface" Url="html/52c4e6c4-9917-87b0-fbc5-6e819c3b346a.htm" />
+  <HelpKINode Title="App112.MainPage class" Url="html/1cb68c98-3657-5be1-042b-e20bd2b2ff60.htm" />
+  <HelpKINode Title="App112.PogotowiePage class" Url="html/8d0a5240-692b-d8f6-4e50-b8effdfcb692.htm" />
+  <HelpKINode Title="App112.PolicjaPage class" Url="html/fea74ce1-22e7-8d78-1a57-9027865dfb4d.htm" />
+  <HelpKINode Title="App112.PrzytomnyPage class" Url="html/74902d35-c033-4311-78d4-62bb1c425824.htm" />
+  <HelpKINode Title="App112.RegisterPage class" Url="html/6fda8439-f14e-a389-18ff-7cc12a0f1405.htm" />
+  <HelpKINode Title="App112.SelectPage class" Url="html/27039321-117f-0423-0bd7-5a48166a87f6.htm" />
+  <HelpKINode Title="App112.StrazPozarnaPage class" Url="html/5a6f5be6-9939-91f1-225d-fe42d9ab9360.htm" />
+  <HelpKINode Title="App112.ZachorowaniaPage class" Url="html/638eadf9-0619-36ca-5260-2a28fa120b29.htm" />
+  <HelpKINode Title="BtnAcceptClick method" Url="html/3059d006-5e04-92f0-530f-55f7f1dea7e8.htm" />
+  <HelpKINode Title="BtnRegisterClick method" Url="html/ff11df76-0ed2-746b-61e7-ca049f83058a.htm" />
+  <HelpKINode Title="Create method" Url="html/1784758a-7b83-2e08-828e-8c8577317358.htm" />
+  <HelpKINode Title="GetMessageDependency method" Url="html/6e67e3af-d2f5-b2ce-310e-0c0ff545798e.htm" />
+  <HelpKINode Title="GetSMSDependency method" Url="html/dc15c8ae-e115-dc54-cc2b-0896873845d9.htm" />
+  <HelpKINode Title="ImageButton class">
+    <HelpKINode Title="ImageButton Class" Url="html/2bf3f3b6-a720-c986-27c1-f6bef3c477e4.htm" />
+    <HelpKINode Title="about ImageButton class" Url="html/2bf3f3b6-a720-c986-27c1-f6bef3c477e4.htm" />
+    <HelpKINode Title="methods" Url="html/b594c611-bcf1-225c-d3e7-f8d2e064f024.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageButton.Create method" Url="html/1784758a-7b83-2e08-828e-8c8577317358.htm" />
+  <HelpKINode Title="ImageButton.OnTap method" Url="html/234f0470-561c-7eb6-78d2-d3545f919dcc.htm" />
+  <HelpKINode Title="IMessage interface">
+    <HelpKINode Title="IMessage Interface" Url="html/d8651ee2-56d3-9f47-ce1d-66c0c3d3302c.htm" />
+    <HelpKINode Title="about IMessage interface" Url="html/d8651ee2-56d3-9f47-ce1d-66c0c3d3302c.htm" />
+    <HelpKINode Title="methods" Url="html/178e4a8e-fc12-a475-5089-c8700314a0e2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMessage.ShowMessage method" Url="html/d5aaa680-04bd-c3d3-930e-74c3f4a726f1.htm" />
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="App.InitializeComponent Method " Url="html/15f4af54-1d5a-2263-77e9-de13fdb285ba.htm" />
+    <HelpKINode Title="MainPage.InitializeComponent Method " Url="html/9fd44710-95d8-cd2a-8ab9-c0eeac16a042.htm" />
+    <HelpKINode Title="RegisterPage.InitializeComponent Method " Url="html/c127200a-a87c-c73c-554a-3a6eb0514930.htm" />
+    <HelpKINode Title="SelectPage.InitializeComponent Method " Url="html/3df1a167-d98c-6d20-4899-c162e3b314af.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISMSHandler interface">
+    <HelpKINode Title="ISMSHandler Interface" Url="html/52c4e6c4-9917-87b0-fbc5-6e819c3b346a.htm" />
+    <HelpKINode Title="about ISMSHandler interface" Url="html/52c4e6c4-9917-87b0-fbc5-6e819c3b346a.htm" />
+    <HelpKINode Title="methods" Url="html/df0013cb-a2b1-29a2-a486-af48d7756e12.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISMSHandler.SendSMS method" Url="html/9a18e452-6f9c-55d1-d810-d513c9c0b361.htm" />
+  <HelpKINode Title="MainPage class">
+    <HelpKINode Title="MainPage Class" Url="html/1cb68c98-3657-5be1-042b-e20bd2b2ff60.htm" />
+    <HelpKINode Title="about MainPage class" Url="html/1cb68c98-3657-5be1-042b-e20bd2b2ff60.htm" />
+    <HelpKINode Title="constructor" Url="html/4e7126f5-eeac-8467-e1e6-64f6e5ad9c74.htm" />
+    <HelpKINode Title="methods" Url="html/d090e17a-a0a2-8a50-ec3c-51b46e5120dc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainPage.BtnAcceptClick method" Url="html/3059d006-5e04-92f0-530f-55f7f1dea7e8.htm" />
+  <HelpKINode Title="MainPage.InitializeComponent method" Url="html/9fd44710-95d8-cd2a-8ab9-c0eeac16a042.htm" />
+  <HelpKINode Title="MainPage.MainPage constructor" Url="html/4e7126f5-eeac-8467-e1e6-64f6e5ad9c74.htm" />
+  <HelpKINode Title="OnResume method" Url="html/eab315b1-fba8-310a-b71e-2e94e28fccad.htm" />
+  <HelpKINode Title="OnSleep method" Url="html/813d9a9a-117a-7953-5842-f9f6b19945f1.htm" />
+  <HelpKINode Title="OnStart method" Url="html/4532e32c-0ff5-4d87-063f-da1d3e69c401.htm" />
+  <HelpKINode Title="OnTap method" Url="html/234f0470-561c-7eb6-78d2-d3545f919dcc.htm" />
+  <HelpKINode Title="PogotowiePage class">
+    <HelpKINode Title="PogotowiePage Class" Url="html/8d0a5240-692b-d8f6-4e50-b8effdfcb692.htm" />
+    <HelpKINode Title="about PogotowiePage class" Url="html/8d0a5240-692b-d8f6-4e50-b8effdfcb692.htm" />
+    <HelpKINode Title="constructor" Url="html/e446a8be-0128-ecc7-8517-95b58472e6bc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PogotowiePage.PogotowiePage constructor" Url="html/e446a8be-0128-ecc7-8517-95b58472e6bc.htm" />
+  <HelpKINode Title="PolicjaPage class">
+    <HelpKINode Title="PolicjaPage Class" Url="html/fea74ce1-22e7-8d78-1a57-9027865dfb4d.htm" />
+    <HelpKINode Title="about PolicjaPage class" Url="html/fea74ce1-22e7-8d78-1a57-9027865dfb4d.htm" />
+    <HelpKINode Title="constructor" Url="html/2879c0f3-dae2-e4a4-77c8-45b26579baa0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PolicjaPage.PolicjaPage constructor" Url="html/2879c0f3-dae2-e4a4-77c8-45b26579baa0.htm" />
+  <HelpKINode Title="PrzytomnyPage class">
+    <HelpKINode Title="PrzytomnyPage Class" Url="html/74902d35-c033-4311-78d4-62bb1c425824.htm" />
+    <HelpKINode Title="about PrzytomnyPage class" Url="html/74902d35-c033-4311-78d4-62bb1c425824.htm" />
+    <HelpKINode Title="constructor" Url="html/f3650cea-2f2b-80a8-45f0-3f4b294fdbe4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrzytomnyPage.PrzytomnyPage constructor" Url="html/f3650cea-2f2b-80a8-45f0-3f4b294fdbe4.htm" />
+  <HelpKINode Title="RegisterPage class">
+    <HelpKINode Title="RegisterPage Class" Url="html/6fda8439-f14e-a389-18ff-7cc12a0f1405.htm" />
+    <HelpKINode Title="about RegisterPage class" Url="html/6fda8439-f14e-a389-18ff-7cc12a0f1405.htm" />
+    <HelpKINode Title="constructor" Url="html/31b9745b-d0e2-bc25-d3c5-2b8679adcdf5.htm" />
+    <HelpKINode Title="methods" Url="html/d60f03a7-beff-b4ac-7aab-ffaea7845fd6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterPage.BtnRegisterClick method" Url="html/ff11df76-0ed2-746b-61e7-ca049f83058a.htm" />
+  <HelpKINode Title="RegisterPage.GetSMSDependency method" Url="html/dc15c8ae-e115-dc54-cc2b-0896873845d9.htm" />
+  <HelpKINode Title="RegisterPage.InitializeComponent method" Url="html/c127200a-a87c-c73c-554a-3a6eb0514930.htm" />
+  <HelpKINode Title="RegisterPage.RegisterPage constructor" Url="html/31b9745b-d0e2-bc25-d3c5-2b8679adcdf5.htm" />
+  <HelpKINode Title="RegisterPage.SendSMS method" Url="html/583a1e9e-541e-30c2-c830-700425ddf0e3.htm" />
+  <HelpKINode Title="RegisterPage.__InitComponentRuntime method" Url="html/1e5ef2ff-25a3-e1f8-0da1-7d623d13d08c.htm" />
+  <HelpKINode Title="SelectPage class">
+    <HelpKINode Title="SelectPage Class" Url="html/27039321-117f-0423-0bd7-5a48166a87f6.htm" />
+    <HelpKINode Title="about SelectPage class" Url="html/27039321-117f-0423-0bd7-5a48166a87f6.htm" />
+    <HelpKINode Title="constructor" Url="html/86236c72-38c2-89d7-9b07-7b1ec3d05e37.htm" />
+    <HelpKINode Title="methods" Url="html/578316c6-16ce-8214-9856-4149cf6fc175.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SelectPage.InitializeComponent method" Url="html/3df1a167-d98c-6d20-4899-c162e3b314af.htm" />
+  <HelpKINode Title="SelectPage.SelectPage constructor" Url="html/86236c72-38c2-89d7-9b07-7b1ec3d05e37.htm" />
+  <HelpKINode Title="SendSMS method">
+    <HelpKINode Title="ISMSHandler.SendSMS Method " Url="html/9a18e452-6f9c-55d1-d810-d513c9c0b361.htm" />
+    <HelpKINode Title="RegisterPage.SendSMS Method " Url="html/583a1e9e-541e-30c2-c830-700425ddf0e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShowMessage method">
+    <HelpKINode Title="App.ShowMessage Method " Url="html/0a4e8d64-51f8-1b1a-f486-4d3d9cdd3bbf.htm" />
+    <HelpKINode Title="IMessage.ShowMessage Method " Url="html/d5aaa680-04bd-c3d3-930e-74c3f4a726f1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StrazPozarnaPage class">
+    <HelpKINode Title="StrazPozarnaPage Class" Url="html/5a6f5be6-9939-91f1-225d-fe42d9ab9360.htm" />
+    <HelpKINode Title="about StrazPozarnaPage class" Url="html/5a6f5be6-9939-91f1-225d-fe42d9ab9360.htm" />
+    <HelpKINode Title="constructor" Url="html/f9953471-0b70-2317-979a-22123c917bd1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StrazPozarnaPage.StrazPozarnaPage constructor" Url="html/f9953471-0b70-2317-979a-22123c917bd1.htm" />
+  <HelpKINode Title="ZachorowaniaPage class">
+    <HelpKINode Title="ZachorowaniaPage Class" Url="html/638eadf9-0619-36ca-5260-2a28fa120b29.htm" />
+    <HelpKINode Title="about ZachorowaniaPage class" Url="html/638eadf9-0619-36ca-5260-2a28fa120b29.htm" />
+    <HelpKINode Title="constructor" Url="html/b360c103-f04c-3631-f9db-374a782538dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ZachorowaniaPage.ZachorowaniaPage constructor" Url="html/b360c103-f04c-3631-f9db-374a782538dd.htm" />
+  <HelpKINode Title="__InitComponentRuntime method">
+    <HelpKINode Title="App.__InitComponentRuntime Method " Url="html/32d8f97a-1e9e-1bec-7e2d-41e8e00ded51.htm" />
+    <HelpKINode Title="RegisterPage.__InitComponentRuntime Method " Url="html/1e5ef2ff-25a3-e1f8-0da1-7d623d13d08c.htm" />
+  </HelpKINode>
+</HelpKI>

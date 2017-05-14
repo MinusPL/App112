@@ -1,0 +1,263 @@
+\documentclass[a4paper]{article}
+
+\setlength{\textheight}{24cm}
+\setlength{\textwidth}{15.92cm}
+\setlength{\footskip}{10mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\topmargin}{0mm}
+\setlength{\headsep}{5mm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{polski}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\renewcommand\theadfont{\bfseries}
+
+\title{Dokmentacja Aplikacji - 112 Zgłoś Zdarzenie}
+\author{Jakub Szatkowski\\Edyta Brudzisz\\Arkadiusz Rozmus}
+\date{Rzeszów, 10.05.2017r.}
+
+\begin{document}
+	\maketitle
+	
+	\section{Cel aplikacji}
+	Aplikacja ma na celu udostępnienie możliwości skorzystania z usługi powiadamiania ratunkowego osobom, które z różnych przyczyn nie mogą wykorzystać tradycyjnej komunikacji w drodze połączenia telefonicznego.
+	
+	\section{Wymagania aplikacji}
+	Urządzenie z możliwością odbierania i wysyłania wiadomości SMS w technologii GSM. Dodatkowo urządzenie to musi posiadać jeden z systemów operacyjnych:
+	\begin{itemize}
+		\item Android w wersji co najmniej...
+		\item iOS w wersji co najmniej...
+		\item Windows Phone w wersji co najmniej...
+	\end{itemize}
+	
+	\section{Opis zastosowanych rozwiązań}
+	Do stworzenia aplikacji został wykorzystany framework Xamarin.Forms, który umożliwia ...
+	
+	\section{Opis algorytmu budowania informacji o incydencie}
+	Ze względu na złożoność algorytmu oraz duże rozmiary jego graficznej reprezentacji, został on dołączony w formie schematu blokowego jako załącznik do dokumentu.
+	
+	Algorytm ten został stworzony na podstawie Jednolitego Katalogu Zdarzeń opracowanego na potrzeby Systemu Informatycznego Centrów Powiadamiania Ratunkowego. Dodatkowo:
+	\begin{itemize}
+		\item Cześć związana z ratownictwem medycznym została opracowana na podstawie dokumentu \href{http://ratunek24.pl/media/upload/Procedury\%20dla\%20dyspozytor\%C3\%B3w\%20medycznych.pdf}{,,Procedury wspomagające podjęcie decyzji przez dyspozytora medycznego w zakresie przyjęcia zgłoszenia, kwalifikacji zgłoszenia oraz dysponowania zespołami ratownictwa medycznego do różnych stanów zagrożenia zdrowotnego''} z 10 grudnia 2013 r. opracowanej przez zespół pod przewodnictwem Roberta Gałązkowskiego w Warszawie. Skonsultowana została z Lek. Med. Markiem Wasiutą - Kierownikiem Szpitalnego Oddziału Ratunkowego przy Szpitalu Wojewódzkim im. Zofii z Zamoyskich Tarnowskiej w Tarnobrzegu, specjalistą Chirurgii Dziecięcej i Medycyny Ratunkowej.
+		\item Cześć związana z pracą straży pożarnych została opracowana przy konsultacji z asp. sztab. Markiem Szatkowskim - Dyżurnym Operacyjnym Stanowiska Kierowania Komendanta Powiatowego Państwowej Straży Pożarnej w Lesku.
+		\item Cześć związana z pracą policji została opracowana przy konsultacji z nadkom. Jerzym Góreckim - I zastępcą Komendanta Powiatowego Policji w Sanoku. 
+	\end{itemize}
+	
+	\noindent Algorytm został stworzony w postaci schematu blokowego w celu zwiększenia jego przejrzystości. Zawiera on wszystkie elementy potrzebne do poprawnego zbudowania informacji o incydencie, tzn. pytania które mogą zostać zadane użytkownikowi aplikacji (oznaczone kolorem niebieskim), oraz elementy przetwarzane przez aplikację (oznaczone kolorem zielonym). Pierwszy strona zawiera główny podział, jaki użytkownik zobaczy na swoim ekranie - na tym etapie będzie on mógł wybrać służbę, którą potrzebuje wezwać. Kliknięcie na odpowiedni piktogram rozpoczyna algorytm wzywania danej służby (znajdujący się na stronach 3, 4 i 5). W tym momencie użytkownik wybiera z listy rodzaj zdarzenia. Rozpoczyna to proces kompletowania szczegółowych informacji na temat incydentu, w którym użytkownik odpowiada na pytania za pomocą odpowiedzi: tak/nie/nie wiem, wybiera element z listy wyboru lub wpisuję cyfrę. W niektórych przypadkach wymagane jest wpisanie krótkiej informacji w polu tekstowym (w szczególności dotyczy to sytuacji, nieprzewidzianych przez autorów aplikacji). Algorytmy będące powtarzającymi się podprocesami (tj. pobranie informacji na temat miejsca, z którego wysyłane jest zgłoszenie) znajdują się na stronie szóstej załącznika. 
+	
+	\section{Opis zastosowanych piktogramów}
+	\subsection{Piktogramy ekranu głównego}
+		\centering
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zglos.png}}
+		&  \textbf{Zgłoś zdarzenie:} \newline Dotknięcie piktogramu skutkuje rozpoczęciem procedury zgłaszania zdarzenia.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/ustawienia.png}}
+		& \textbf{Ustawienia:} \newline Sekcja umożliwia przystosowanie ustawień programu do potrzeb użytkownika.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/uzytkownik.png}}
+		& \textbf{Użytkownik:} \newline Sekcja umożliwia wprowadzenie zmian w danych osobowych i kontaktowych użytkownika aplikacji.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/historia.png}}
+		& \textbf{Historia:} \newline  W tej sekcji można zobaczyć wcześniej wysłane zgłoszenia.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/pomoc.png}}
+		& \textbf{Pomoc:} \newline Dotknięcie tego piktogramu przenosi użytkownika do sekcji Pomocy i instrukcji obsługi.\\
+		\hline
+	\end{longtable}
+	\subsection{Piktogramy ekranu wyboru służby}
+	\centering
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/pozar.png}}
+		&  \textbf{Straż pożarna:} \newline Kategoria ta obejmuje pożary, wypadki oraz miejscowe zagrożenia, które wymagają zaangażowania straży pożarnej.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/pogotowie.png}}
+		& \textbf{Pogotowie Ratunkowe:} \newline Kategoria ta obejmuje sytuacje związane z zagrożeniem życia lub zdrowia oraz porodem.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/policja.png}}
+		& \textbf{Policja:} \newline Kategoria ta obejmuje incydenty związane z naruszeniem prawa.\\
+		\hline
+	\end{longtable}
+	\subsection{Piktogramy wyboru rodzaju zdarzenia w kategorii Straż Pożarna}
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/pozar.png}}
+		&  \textbf{Pożar:} \newline Kategoria ta obejmuje wszystkie rodzaje pożarów.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/wypadekkomunikacyjny.png}}
+		& \textbf{Wypadek:} \newline Kategoria ta obejmuje incydenty dotyczące wypadków drogowych, kolejowych, lotniczych oraz związanych z komunikacją drogą wodną.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/katastrofabudowlana.png}}
+		&  \textbf{Awaria/Katastrofa budowlana:} \newline Tę kategorię należy wybrać, jeżeli zauważono zawalony lub uszkodzony budynek, który może zagrażać bezpieczeństwu.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/powodz.png}}
+		& \textbf{Podtopienie/Powódź:} \newline Ta kategoria obejmuje podtopienia i zalania obiektów budowlanych, posesji oraz pól uprawnych.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zawalonedrzewo.png}}
+		& \textbf{Drzewo:} \newline Kategoria ta obejmuje zgłoszenia o powalonych lub pochylonych drzewach, które mogą zagrażać bezpieczeństwu.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/plamaoleju.png}}
+		& \textbf{Plama oleju:} \newline Kategoria ta obejmuje zgłoszenia o pojawieniu się plamy oleju na powierzchni zbiornika wodnego, na drodze lub innej powierzchni lądowej.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/techniczne.png}}
+		& \textbf{Uszkodzenia obiektów technicznych:} \newline Kategoria ta obejmuje zgłoszenia o uszkodzeniu obiektu technicznego (np. mostu), które zakłóca funkcjonowanie ludności lub zagraża bezpieczeństwu.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/uwiezionezwierze.png}}
+		& \textbf{Uwięzione zwierzę:} \newline Tę kategorię należy wybrać w przypadku napotkania zwierzęcia uwięzionego np. w sidłach, którego zgłaszający nie jest w stanie samodzielnie uwolnić.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/uwiezionyczlowiek.png}}
+		& \textbf{Uwięziony człowiek:} \newline Kategoria ta obejmuje zgłoszenia o uwięzieniu człowieka (np. przygniecieniu ciężkim przedmiotem), kiedy nie ma możliwości wydostania go lub w jakikolwiek sposób zagrożone jest jego zdrowie lub życie.\\
+		\hline
+	\end{longtable}
+\newpage
+	\subsection{Piktogramy wyboru rodzaju zdarzenia w kategorii Pogotowie Ratunkowe}
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/ciaza.png}}
+		&  \textbf{Ciąża:} \newline Ta kategoria obejmuje poród lub komplikacje ciąży.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/wypadekkomunikacyjny.png}}
+		& \textbf{Wypadek:} \newline Kategoria ta obejmuje incydenty dotyczące wypadków drogowych, kolejowych, lotniczych oraz związanych z komunikacją drogą wodną.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zachorowanie.png}}
+		& \textbf{Zachorowania lub uszkodzenie ciała:} \newline Kategoria obejmuje przypadki chorób, urazów oraz zagrożenia zdrowia lub życia z innych powodów.\\
+		\hline
+	\end{longtable}
+	\subsubsection{Piktogramy określające stan osoby poszkodowanej w przypadku kategorii ,,Zachorowanie lub uszkodzenie ciała''}
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/przytomny.png}}
+		&  \textbf{Przytomny:} \newline Kategorię tę należy wybrać w przypadku osoby przytomnej.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/nieprzytomny.png}}
+		& \textbf{Nieprzytomny:} \newline Kategorię tę należy wybrać w przypadku osoby nieprzytomnej.\\
+		\hline
+	\end{longtable}
+\newpage
+	\subsubsection{Piktogramy określające stan osoby poszkodowanej skategoryzowanej jako ,,Przytomny''}
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/alergia.png}}
+		&  \textbf{Alergia:} \newline Należy wybrać tę kategorię, gdy osoba przejawia zagrażające jej zdrowiu lub życiu objawy uczulenia lub alergii.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/drgawki.png}}
+		& \textbf{Drgawki:} \newline Należy wybrać tę kategorię w przypadku, gdy u poszkodowanego występują drgawki.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/bol.png}}
+		& \textbf{Ból:} \newline Kategoria ta obejmuje silne lub długotrwałe bóle: brzucha, głowy, kończyn, kręgosłupa, w klatce piersiowej oraz inne.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/dusznosci.png}}
+		& \textbf{Duszność:} \newline Kategoria ta obejmuje trudności w oddychaniu u poszkodowanego.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/toniecie.png}}
+		& \textbf{Tonięcie:} \newline Tę kategorię należy wybrać w przypadku, gdy poszkodowany tonie lub został wyciągnięty z wody, lecz potrzebuje pomocy medycznej.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/porazenie.png}}
+		& \textbf{Porażenie prądem:} \newline Należy wybrać tę kategorię, gdy poszkodowany został porażony prądem lub piorunem. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/uraz.png}}
+		& \textbf{Urazy:} \newline Kategoria ta obejmuje wszelkiego rodzaju urazy. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/krwawienie.png}}
+		& \textbf{Krwotok:} \newline Kategorię tę należy wybrać, gdy u poszkodowanego występuje zagrażający zdrowiu lub życiu krwotok. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zadlawienie.png}}
+		& \textbf{Zachłyśnięcie/Zadławienie:} \newline Kategoria ta dotyczy zagrożenia zdrowia wynikajacego z obecności ciała obcego lub cieczy w drogach oddechowych poszkodowanego. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/kardiologiczne.png}}
+		& \textbf{Problemy Kardiologiczne:} \newline Kategoria ta obejmuje zagrożenia zdrowia i życia spowodowane przez nieprawidłowe działanie serca poszkodowanego. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/udar.png}}
+		& \textbf{Paraliż/Bełkotliwa mowa/Udar:} \newline Kategoria ta obejmuje objawy udaru mózgu, bełkotliwą mowę, paraliż części lub całego ciała lub inne problemy neurologiczne.  \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/oparzenie.png}}
+		& \textbf{Oparzenie:} \newline Kategoria ta obejmuje oparzenia w stopniu zagrażającym zdrowiu lub życiu. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/odmrozenie.png}}
+		& \textbf{Odmrożenie:} \newline Kategoria ta obejmuje odmrożenia grożące trwałym uszkodzeniem części ciała lub zagrażające zdrowiu lub życiu. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zaslabniecie.png}}
+		& \textbf{Zasłabnięcie:} \newline Kategorię tę należy wybrać, gdy poszkodowany skarży się na uczucie słabości. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/cukrzyca.png}}
+		& \textbf{Cukrzyca:} \newline Kategorię tę należy wybrać, gdy poszkodowany przejawia objawy cukrzycy lub wiadomo, że choruje na cukrzycę. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/inne.png}}
+		& \textbf{Inne:} \newline Kategorię tę należy wybrać, gdy żadna z pozostałych kategorii nie opisuje tego zdarzenia. \\
+		\hline
+	\end{longtable}
+	\subsection{Piktogramy wyboru rodzaju zdarzenia w kategorii Policja}
+	\begin{longtable}{|c|p{12cm}|}
+		\hline
+		\thead{Piktogram} & \thead{Opis}\\
+		\hline
+		\endhead
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/drogowe.png}}
+		&  \textbf{Komunikacja drogowa:} \newline Kategoria ta obejmuje incydenty, naruszenia prawa oraz wypadki związane z komunikacją drogową.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/porzadekpubliczny.png}}
+		& \textbf{Zakłócenia porządku publicznego:} \newline Kategoria ta obejmuje zachowania zakłócające porządek publiczny, m.in. spożywanie alkoholu w miejscach publicznych, ekscesy chuligańskie, zakłócanie ciszy nocnej, zachowania nieobyczajne.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/materialywybuchowe.png}}
+		& \textbf{Incydenty z materiałami wybuchowymi:} \newline Kategorię tę należy wybrać, jeżeli doszło do eksplozji, istnieje zagrożenie wybuchem, znaleziono lub wiadomo, że ktoś posiada materiały wybuchowe.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/kradziez.png}}
+		& \textbf{Kradzież/Rozbój:} \newline Kategorię tę należy wybrać w przypadku utraty mienia w wyniku kradzieży.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/przemoc.png}}
+		& \textbf{Przemoc:} \newline Kategoria ta obejmuje zdarzenia związane z przemocą fizyczną lub psychiczną.\\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zaginiecie.png}}
+		& \textbf{Zaginięcie/Uprowadzenie:} \newline Kategorię tę należy wybrać, gdy doszło do zaginięcia osoby, tj. nie ma możliwości ustalenia miejsca jej pobytu lub gdy odnaleziono osobę zaginioną.  \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/seksualne.png}}
+		& \textbf{Przestępstwa seksualne:} \newline Kategoria ta obejmuje wszystkie przestępstwa na tle seksualnym. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/narkotyki.png}}
+		& \textbf{Przestępstwa narkotykowe:} \newline Kategoria ta obejmuje zdarzenia dotyczące narkotyków, tj. posiadanie, handel oraz udostępnianie substancji niedozwolonych. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/zabojstwo.png}}
+		& \textbf{Zabójstwo/Samobójstwo:} \newline Kategoria ta obejmuje zdarzenia, w których doszło do zabójstwa, samobójstwa lub próby samobójczej. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/interwencjadomowa.png}}
+		& \textbf{Interwencje domowe:} \newline Kategorię tę należy wybrać, gdy potrzebna jest interwencja w domu z powodu przemocy rodzinnej lub konfliktu. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/oszustwo.png}}
+		& \textbf{Oszustwa} \newline Kategoria ta obejmuje różnego rodzaju oszustwa oraz fałszerstwa. \\
+		\hline
+		\raisebox{-.8\height}{\includegraphics[draft=false, width=3cm]{media/pictograms/inne.png}}
+		& \textbf{Inne:} \newline Kategorię tę należy wybrać, gdy żadna z pozostałych kategorii nie opisuje problemu. \\
+		\hline
+	\end{longtable}		
+\end{document}
+,

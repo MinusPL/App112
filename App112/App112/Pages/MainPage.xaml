@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:App112"
+			 x:Class="App112.MainPage"
+			 Title="112 Zgłoś Zdarzenie">
+	<ScrollView>
+		<StackLayout Orientation="Vertical" Padding="16,16,16,16" Spacing="10">
+			<Image Source="logo.png"
+					VerticalOptions="Center"
+					WidthRequest="64"/>
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<!-- &#10; is a newline -->
+						<Span Text="1. Aplikacja służy do korzystania z sytuacjach, gdy potrzebna jest pomoc służb ratowniczych lub porządkowych"/>
+						<Span Text="&#10;2. Zakazuje się zgłaszania fałszywych zdarzeń. W takich sytuacjach zostaną wyciągnięte konsekwencje karne"/>
+						<Span Text="&#10;3. Zakazuje się podawania fałszywych informacji w procesie rejestracji i zmiany danych użytkownika"/>
+						<Span Text="&#10;4. Zakazuje się wykorzystywania aplikacji do wysyłania dużej ilości zgłoszeń w krótkim odstępie czasu. Dotyczy to również wiadomości mających charakter spamu lub cyberataku"></Span>
+						<Span Text="&#10;5. Użytkownik po dokonaniu zgłoszenia ma obowiązek umożliwienia służbom komunikacji zwrotnej"></Span>
+						<Span Text="&#10;6. Użytkownik zobowiązany jest do przekazania wszystkich znanych mu informacji na temat zdarzenia"></Span>
+						<Span Text="&#10;7. Użytkownik w procesie rejestracji zgadza się na przetwarzanie danych osobowych dla potrzeb niezbędnych do realizacji usługi powiadamiania ratunkowego zgodnie z Ustawą z dnia 29.08.1997 roku O ochonie danych osobowych; tekst jednolity: Dz.U. 2016r. poz.922"></Span>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+
+			<Button Text="Akceptuję" Clicked="BtnAcceptClick" BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

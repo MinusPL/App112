@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App112.Android</name>
+    </assembly>
+    <members>
+        <member name="M:App112.Droid.MainActivity.OnCreate(Android.OS.Bundle)">
+            <inheritdoc />
+        </member>
+        <member name="M:App112.Droid.Message.ShowMessage(System.String)">
+            <summary>
+            Shows a quick debug message
+            </summary>
+            <param name="text">Text to show</param>
+        </member>
+        <member name="T:App112.Droid.SMSHandler">
+            <summary>
+            Platform-specific implementation of SMS messaging
+            </summary>
+        </member>
+        <member name="M:App112.Droid.SMSHandler.SendSMS(System.String,System.String,System.String)">
+            <summary>
+            Sends a SMS message. Parameters are checked for nulls and empty strings, and throw <exception cref="T:System.ArgumentException"></exception>
+            </summary>
+            <param name="destination">Where the message comes from</param>
+            <param name="source">Where the message is sent to</param>
+            <param name="text"></param>
+        </member>
+        <member name="M:App112.Droid.SMSHandler.ValidateInput(System.String,System.String,System.String)">
+            <summary>
+            Checks if the input is null/empty (throws <exception cref="T:System.ArgumentException"></exception>)
+            </summary>
+            <param name="destination"></param>
+            <param name="source"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:App112.Droid.SMSHandler.RegisterReceiver">
+            <summary>
+            Binds a SMSReceiver to retrieve the status of sent message
+            </summary>
+        </member>
+        <member name="M:App112.Droid.SMSHandler.GetContext">
+            <summary>
+            Application.Context replacement
+            </summary>
+            <returns>Returns a <see cref="T:Android.Content.Context"/> of the application</returns>
+        </member>
+        <member name="M:App112.Droid.SMSHandler.GetSentIntent(Android.Content.Context)">
+            <summary>
+            Creates a hook to monitor SMS message status
+            </summary>
+            <param name="ctx"><see cref="T:Android.Content.Context"/>. Use <see cref="M:App112.Droid.SMSHandler.GetContext"/> or <see cref="P:Android.App.Application.Context"/></param>
+            <returns>A <see cref="T:Android.App.PendingIntent"/> for the sent message</returns>
+        </member>
+        <member name="T:App112.Droid.SMSReceiver">
+            <summary>
+            Monitors the status of sent SMS messages
+            </summary>
+        </member>
+        <member name="M:App112.Droid.SMSReceiver.OnReceive(Android.Content.Context,Android.Content.Intent)">
+            <summary>
+            Handles outgoing message status
+            </summary>
+            <param name="context">Application <see cref="T:Android.Content.Context"/></param>
+            <param name="intent"></param>
+        </member>
+        <member name="M:App112.Droid.SMSReceiver.GetResultCode">
+            <summary>
+            Returns a string of the ResultCode
+            </summary>
+            <returns>A <see cref="T:System.String"/> of the result. "Ok" if everything went well, some random stuff if it didn't</returns>
+        </member>
+    </members>
+</doc>

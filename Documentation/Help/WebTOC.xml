@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="50044351-bae0-407d-bdf0-25cd8dfa72d0" Title="App112" Url="html/6e9f0d5e-e075-fbbf-1b32-1775ec9d990b.htm">
+    <HelpTOCNode Id="0e26a751-7beb-46d5-ab3c-2981bf3f1acc" Title="App Class" Url="html/ecec592c-74f8-a46e-3f84-aab3a31bd02c.htm">
+      <HelpTOCNode Title="App Constructor " Url="html/20dedcd4-012f-d6a8-27af-e386b92982d7.htm" />
+      <HelpTOCNode Id="673783c0-2ea1-47c3-a713-fe347ac8eb40" Title="App Methods" Url="html/831052ac-3a6e-1103-9afa-e485cefb0e8d.htm">
+        <HelpTOCNode Title="__InitComponentRuntime Method " Url="html/32d8f97a-1e9e-1bec-7e2d-41e8e00ded51.htm" />
+        <HelpTOCNode Title="GetMessageDependency Method " Url="html/6e67e3af-d2f5-b2ce-310e-0c0ff545798e.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/15f4af54-1d5a-2263-77e9-de13fdb285ba.htm" />
+        <HelpTOCNode Title="OnResume Method " Url="html/eab315b1-fba8-310a-b71e-2e94e28fccad.htm" />
+        <HelpTOCNode Title="OnSleep Method " Url="html/813d9a9a-117a-7953-5842-f9f6b19945f1.htm" />
+        <HelpTOCNode Title="OnStart Method " Url="html/4532e32c-0ff5-4d87-063f-da1d3e69c401.htm" />
+        <HelpTOCNode Title="ShowMessage Method " Url="html/0a4e8d64-51f8-1b1a-f486-4d3d9cdd3bbf.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6b07875b-61c3-418e-8c8a-366c2bbf92e7" Title="ImageButton Class" Url="html/2bf3f3b6-a720-c986-27c1-f6bef3c477e4.htm">
+      <HelpTOCNode Id="6d5cfeb5-ddbc-4044-8fa2-3c60056c0ab2" Title="ImageButton Methods" Url="html/b594c611-bcf1-225c-d3e7-f8d2e064f024.htm">
+        <HelpTOCNode Title="Create Method " Url="html/1784758a-7b83-2e08-828e-8c8577317358.htm" />
+        <HelpTOCNode Title="OnTap Method " Url="html/234f0470-561c-7eb6-78d2-d3545f919dcc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5ef42d20-1678-4030-9750-2c27301962dc" Title="IMessage Interface" Url="html/d8651ee2-56d3-9f47-ce1d-66c0c3d3302c.htm">
+      <HelpTOCNode Id="8be2b11f-0271-47a0-96b9-7002f0997a88" Title="IMessage Methods" Url="html/178e4a8e-fc12-a475-5089-c8700314a0e2.htm">
+        <HelpTOCNode Title="ShowMessage Method " Url="html/d5aaa680-04bd-c3d3-930e-74c3f4a726f1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="59056b77-b264-4d54-af72-6d0a0f7001f8" Title="ISMSHandler Interface" Url="html/52c4e6c4-9917-87b0-fbc5-6e819c3b346a.htm">
+      <HelpTOCNode Id="154cb438-0b93-4787-9cc7-66267de2c475" Title="ISMSHandler Methods" Url="html/df0013cb-a2b1-29a2-a486-af48d7756e12.htm">
+        <HelpTOCNode Title="SendSMS Method " Url="html/9a18e452-6f9c-55d1-d810-d513c9c0b361.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8f3db148-0529-4427-b94b-7d050b694ce4" Title="MainPage Class" Url="html/1cb68c98-3657-5be1-042b-e20bd2b2ff60.htm">
+      <HelpTOCNode Title="MainPage Constructor " Url="html/4e7126f5-eeac-8467-e1e6-64f6e5ad9c74.htm" />
+      <HelpTOCNode Id="66c16337-5310-4f57-a77e-7c46f6f22873" Title="MainPage Methods" Url="html/d090e17a-a0a2-8a50-ec3c-51b46e5120dc.htm">
+        <HelpTOCNode Title="BtnAcceptClick Method " Url="html/3059d006-5e04-92f0-530f-55f7f1dea7e8.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/9fd44710-95d8-cd2a-8ab9-c0eeac16a042.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b86932c9-afc1-4979-b02c-a754ef482c97" Title="PogotowiePage Class" Url="html/8d0a5240-692b-d8f6-4e50-b8effdfcb692.htm">
+      <HelpTOCNode Title="PogotowiePage Constructor " Url="html/e446a8be-0128-ecc7-8517-95b58472e6bc.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a8ee5903-43e3-4278-abf9-1aa1b1ee299a" Title="PolicjaPage Class" Url="html/fea74ce1-22e7-8d78-1a57-9027865dfb4d.htm">
+      <HelpTOCNode Title="PolicjaPage Constructor " Url="html/2879c0f3-dae2-e4a4-77c8-45b26579baa0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8a08e83f-8396-4b03-bbd8-2597bac31b45" Title="PrzytomnyPage Class" Url="html/74902d35-c033-4311-78d4-62bb1c425824.htm">
+      <HelpTOCNode Title="PrzytomnyPage Constructor " Url="html/f3650cea-2f2b-80a8-45f0-3f4b294fdbe4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="958a7682-9e8f-46b6-9f22-29c87d558ae3" Title="RegisterPage Class" Url="html/6fda8439-f14e-a389-18ff-7cc12a0f1405.htm">
+      <HelpTOCNode Title="RegisterPage Constructor " Url="html/31b9745b-d0e2-bc25-d3c5-2b8679adcdf5.htm" />
+      <HelpTOCNode Id="4845e39e-727d-446b-97aa-e0b88a2aaa4c" Title="RegisterPage Methods" Url="html/d60f03a7-beff-b4ac-7aab-ffaea7845fd6.htm">
+        <HelpTOCNode Title="__InitComponentRuntime Method " Url="html/1e5ef2ff-25a3-e1f8-0da1-7d623d13d08c.htm" />
+        <HelpTOCNode Title="BtnRegisterClick Method " Url="html/ff11df76-0ed2-746b-61e7-ca049f83058a.htm" />
+        <HelpTOCNode Title="GetSMSDependency Method " Url="html/dc15c8ae-e115-dc54-cc2b-0896873845d9.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/c127200a-a87c-c73c-554a-3a6eb0514930.htm" />
+        <HelpTOCNode Title="SendSMS Method " Url="html/583a1e9e-541e-30c2-c830-700425ddf0e3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dc7fb58e-a8fe-4162-91f3-eb65febc2b35" Title="SelectPage Class" Url="html/27039321-117f-0423-0bd7-5a48166a87f6.htm">
+      <HelpTOCNode Title="SelectPage Constructor " Url="html/86236c72-38c2-89d7-9b07-7b1ec3d05e37.htm" />
+      <HelpTOCNode Id="8c2ffba3-fe5b-4557-8a15-ad42dfb894cf" Title="SelectPage Methods" Url="html/578316c6-16ce-8214-9856-4149cf6fc175.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/3df1a167-d98c-6d20-4899-c162e3b314af.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="448eda2c-98dd-40e8-95b3-d1be6b5f8a88" Title="StrazPozarnaPage Class" Url="html/5a6f5be6-9939-91f1-225d-fe42d9ab9360.htm">
+      <HelpTOCNode Title="StrazPozarnaPage Constructor " Url="html/f9953471-0b70-2317-979a-22123c917bd1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="32e21666-a3d6-4313-a1b5-5a507d2429a6" Title="ZachorowaniaPage Class" Url="html/638eadf9-0619-36ca-5260-2a28fa120b29.htm">
+      <HelpTOCNode Title="ZachorowaniaPage Constructor " Url="html/b360c103-f04c-3631-f9db-374a782538dd.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

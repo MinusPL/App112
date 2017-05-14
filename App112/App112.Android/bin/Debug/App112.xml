@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App112</name>
+    </assembly>
+    <members>
+        <member name="M:App112.App.ShowMessage(System.String)">
+            <summary>
+            Shows a quick debug message
+            </summary>
+            <param name="text">Text to be shown</param>
+        </member>
+        <member name="M:App112.App.GetMessageDependency">
+            <summary>
+            Grabs <see cref="T:App112.IMessage"/> from the <see cref="T:Xamarin.Forms.DependencyService"/> for quicker access
+            </summary>
+            <returns><see cref="T:App112.IMessage"/></returns>
+        </member>
+        <member name="T:App112.IMessage">
+            <summary>
+            Abstract interface for little debug messages
+            </summary>
+        </member>
+        <member name="M:App112.IMessage.ShowMessage(System.String)">
+            <summary>
+            Shows a quick debug message
+            </summary>
+            <param name="text">Test to show</param>
+        </member>
+        <member name="T:App112.ISMSHandler">
+            <summary>
+            Abstract interface for SMS messaging support
+            </summary>
+        </member>
+        <member name="M:App112.ISMSHandler.SendSMS(System.String,System.String,System.String)">
+            <summary>
+            Sends a SMS message
+            </summary>
+            <exception cref="T:System.ArgumentException">Thrown when any of the parameters is null/empty</exception>
+            <param name="destination">Where the message comes from</param>
+            <param name="source">Where the message is sent to</param>
+            <param name="text">Message body</param>
+        </member>
+        <member name="T:App112.ImageButton">
+            <summary>
+            A custom button with a <see cref="T:Xamarin.Forms.Label"/> and <see cref="T:Xamarin.Forms.Image"/> below it, plus tap callbacks
+            </summary>
+        </member>
+        <member name="M:App112.ImageButton.Create(System.String,System.String,System.Double,Xamarin.Forms.Command)">
+            <summary>
+            Creates a new <see cref="T:Xamarin.Forms.StackLayout"/> ("ImageButton") with given text, background color and image
+            </summary>
+            <param name="text">Text to be shown</param>
+            <param name="image">Image file to use (required)</param>
+            <param name="width">Image width</param>
+            <param name="onTap">Callback <see cref="T:Xamarin.Forms.Command"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:App112.RegisterPage.BtnRegisterClick(System.Object,System.EventArgs)">
+            <summary>
+            Handles "Register" button, sends SMS message and switches to the main page
+            </summary>
+        </member>
+        <member name="M:App112.RegisterPage.SendSMS(System.String,System.String,System.String)">
+            <summary>
+            Wrapper for <see cref="T:App112.ISMSHandler"/>'s SendSMS
+            </summary>
+            <param name="destination"></param>
+            <param name="source"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:App112.RegisterPage.GetSMSDependency">
+            <summary>
+            Returns ISMSHandler methods from the <see cref="T:Xamarin.Forms.DependencyService"/> for quicker access
+            </summary>
+            <returns><see cref="T:App112.ISMSHandler"/> for quicker access to its methods</returns>
+        </member>
+    </members>
+</doc>

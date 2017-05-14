@@ -1,0 +1,195 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="css/icon.css" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        
+        <title>Instrukcja obsługi do aplikacji: 112 - Zgłoś Zdarzenie</title>
+        
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+                function sleepFor( sleepDuration ){
+    var now = new Date().getTime();
+    while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
+}
+                 $(document).ready(function(){
+                $('.collapsible').collapsible();
+                $('[data-click]').on('click', function (e) {
+                    $( $(this).data('click') ).trigger('click');
+                    sleepFor(500);
+                    var top = $($(this).attr('scroll-to')).position().top;
+                    console.log(top);
+                    $('html, body').animate({
+                        scrollTop: top
+                    }, 300);;
+                });
+             });
+        </script>
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <nav>
+            <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Instrukcja do aplikacji 112 - Zgłoś zdarzenie</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header" id="pierwszy">Pierwsze uruchomienie aplikacji</div>
+                                <div class="collapsible-body">
+                                    <span>Przy pierwszym uruchomieniu aplikacja przeprowadzi Cię przez obowiązkowy proces <a href="#rejestracja" data-click="#rejestracja">rejestracji</a>. Po dokonaniu rejestracji będziesz mógł <a href="#zgloszenie" data-click="#zgloszenie">zgłaszać zdarzenia.</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header" id="rejestracja">Rejestracja</div>
+                                <div class="collapsible-body">
+                                    Aplikacja poprosi Cię o wypełnienie pól swoimi danymi.<br>
+                                    [screen]<br>
+                                    Następnie dostaniesz SMS oraz maila potwierdzającego. Postępuj zgodnie z instrukcjami w wiadomościach.<br>
+                                    [screeny]                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Czy muszę podawać wszystkie dane?</div>
+                                <div class="collapsible-body">
+                                    Tak, wszystkie dane, o które poprosi Cię aplikacja, potrzebne są do prawidłowego zgłoszenia informacji o zdarzeniu oraz usprawniają działanie wzywanych służb porządkowych i ratowniczych.
+                                    Żadne wprowadzone dane nie są udostępniane osobom trzecim.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Korzystam z telefonu innej osoby. Jak mogę podać swoje dane?</div>
+                                <div class="collapsible-body">
+                                    Przy zgłaszaniu zdarzenia aplikacja za każdym razem prosi o sprawdzenie i potwierdzenie danych osobowych zgłaszającego. Wtedy możesz wprowadzić swoje dane.
+                                    <a href="javascript:void(0);" data-click="#zgloszenie" scroll-to="#danekontaktowe">Więcej w sekcji "Dane kontaktowe zgłaszającego".</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header" id="zgloszenie">Jak mogę zgłosić, że coś się stało?</div>
+                                <div class="collapsible-body">
+                                    <b>Ekran Startowy</b><br>
+                                    Skorzystaj z wyszukiwarki, aby odnaleźć odpowiedni rodzaj zdarzenia.<br>
+                                    [screen]<br>
+                                    Jeśli nie możesz znaleźć odpowiedniej kategorii zdarzenia przez wyszukiwanie, wybierz, którą służbę chcesz wezwać.<br>
+                                    [screen]<br>
+                                    Jeśli chcesz zmienić wybór, możesz wrócić do poprzedniego ekranu naciskając przycisk powrotu.<br>
+                                    [screen]<br>
+                                    Następnie wybierz zdarzenie spośród wyświetlonych rodzajów zdarzeń.<br>
+                                    [screen]<br>
+                                    Po wybraniu rodzaju zdarzenia, aplikacja zada Ci kilka pytań. Odpowiedz na nie, wybierając odpowiednie opcje. Po udzieleniu odpowiedzi na wszystkie pytania, aplikacja pozwoli Ci przejść dalej.<br>
+                                    [screeny]<br><br>
+                                    
+                                    <b>Rodzaj zdarzenia</b><br>
+                                    Skorzystaj z wyszukiwarki, aby odnaleźć odpowiedni rodzaj zdarzenia.<br>
+                                    [screen]<br>
+                                    Jeśli nie możesz znaleźć odpowiedniej kategorii zdarzenia przez wyszukiwanie, wybierz, którą służbę chcesz wezwać.<br>
+                                    [screen]<br>
+                                    Jeśli chcesz zmienić wybór, możesz wrócić do poprzedniego ekranu naciskając przycisk powrotu.<br>
+                                    [screen]<br>
+                                    Następnie wybierz zdarzenie spośród wyświetlonych rodzajów zdarzeń.<br>
+                                    [screen]<br>
+                                    Po wybraniu rodzaju zdarzenia, aplikacja zada Ci kilka pytań. Odpowiedz na nie, wybierając odpowiednie opcje. Po udzieleniu odpowiedzi na wszystkie pytania, aplikacja pozwoli Ci przejść dalej.<br>
+                                    [screeny]<br><br>
+                                    
+                                    <b id="miejscezdarzenia">Miejsce zdarzenia</b><br>
+                                    Następnie aplikacja będzie próbowała ustalić Twoją pozycję na podstawie modułu GPS lub najbliższych nadajników sieci komórkowej i poprosi Cię o potwierdzenie.<br>
+                                    [screen]<br>
+                                    Jeśli coś się nie zgadza, wybierz opcję „Wprowadź szczegóły lokalizacji” i wypełnij pola.<br>
+	                                ! Pamiętaj o tym, że zbyt mała ilość informacji może spowodować trudności w odnalezieniu 	   miejsca zdarzenia przez służby!<br>
+                                    [screen]<br><br>
+                                    
+                                    <b id="danekontaktowe">Dane kontaktowe zgłaszającego</b><br>
+                                    Następnie aplikacja poprosi Cię o potwierdzenie danych kontaktowych. Na tym etapie możesz je zmienić.<br>
+	                                ! Zmiany wpływają tylko na obecnie wysyłane zgłoszenie. Aby zmienić dane kontaktowe dla wszystkich przyszłych zgłoszeń, wejdź w „Ustawienia”<br>
+                                    [screen]<br>
+                                    Następnie aplikacja wyśle zgłoszenie i wyświetli ekran potwierdzający.<br>
+                                    [screen]<br>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Wysłałem zgłoszenie, co dalej?</div>
+                                <div class="collapsible-body">
+                                    Nawet po wysłaniu zgłoszenia pozostań w pobliżu telefonu, aby można było skontaktować się z Tobą. Istnieje taka możliwość, że dyspozytor wyśle do Ciebie wiadomość SMS z pytaniem o ważne szczegóły.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Otrzymałem SMS od dyspozytora. Jak odpowiedzieć?</div>
+                                <div class="collapsible-body">
+                                    Aby odpowiedzieć, wpisz informację do pola poniżej wiadomości.<br>
+                                    [screen]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Nie wiem, którą służbę powinienem wezwać – co zrobić?</div>
+                                <div class="collapsible-body">
+                                    W tej sytuacji skorzystaj z wyszukiwarki zdarzeń i wybierz rodzaj zdarzenia z listy znalezionych wyników.<br>
+                                    [screen]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Nie jestem pewien, który rodzaj zdarzenia wybrać.</div>
+                                <div class="collapsible-body">
+                                    Wybierz taki rodzaj zdarzenia, który według Ciebie jest najbliższy temu, co się stało. Listę kategorii wraz z opisami możesz znaleźć tutaj:<br>
+                                    [link do kategorii z opisami]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Nie mogę znaleźć odpowiedniej kategorii.</div>
+                                <div class="collapsible-body">
+                                    Jeśli nie ma kategorii opisującej zdarzenie, które chcesz zgłosić, wybierz opcję „Inne” i opisz problem.<br>
+                                    [screen]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Jak przekazać więcej informacji na temat zdarzenia?</div>
+                                <div class="collapsible-body">
+                                    Jeśli zaistnieje taka potrzeba, dyspozytor wyśle do Ciebie wiadomość z pytaniem o większą ilość szczegółów.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Jak przekazać informację o miejscu zdarzenia?</div>
+                                <div class="collapsible-body">
+                                    Aplikacja automatycznie pobierze położenie z modułu GPS lub nadajników sieci komórkowej. Istnieje też możliwość wpisania tych informacji recznie.<br>
+                                    <a href="javascript:void(0);" data-click="#zgloszenie" scroll-to="#miejscezdarzenia">Więcej w sekcji: "Miejsce zdarzenia"</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Nie mogę udzielić odpowiedzi na jedno z pytań</div>
+                                <div class="collapsible-body">
+                                    Z rozwijanej listy wybierz opcję „Nie wiem”. Jeśli jest to pole tekstowe, napisz „Nie wiem”.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Czy aplikacja będzie działać na moim telefonie?</div>
+                                <div class="collapsible-body">
+                                    [wymagania techniczne]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Coś nie działa, co zrobić?</div>
+                                <div class="collapsible-body">
+                                    Upewnij się, że korzystasz z aktualnej wersji w aplikacji. Jeśli problem nadal występuje, skontaktuj się z nami.<br>
+                                    [kontakt]
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
