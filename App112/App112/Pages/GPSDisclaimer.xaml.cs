@@ -29,8 +29,14 @@ namespace App112.Pages
             }
             else
             {
-                Application.Current.MainPage = new NavigationPage(new GPSPage());
+                OpenGPSSettings();
+                //Application.Current.MainPage = new NavigationPage(new GPSPage());
             }
+        }
+
+        private void OpenGPSSettings()
+        {
+            GetGPSDependency().OpenGPSSettings();
         }
 
         private bool IsGPSEnabled()

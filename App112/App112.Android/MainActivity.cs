@@ -13,8 +13,11 @@ namespace App112.Droid {
 	ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation
 	)]
 #pragma warning disable 1591
-	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity {
+	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
 #pragma warning restore 1591
+
+        public string coordinates;
 
         /// <inheritdoc />
         protected override void OnCreate(Bundle bundle) {
@@ -25,6 +28,18 @@ namespace App112.Droid {
             global::Xamarin.Forms.Forms.Init(this, bundle);
 			LoadApplication(new App());
 		}
+
+        protected async void OnLocationChange(Location location)
+        {
+            /*if (location != null)
+            {
+                coordinates = string.Format("Szerokość geograficzna: {0}, Długość geograficzna: {1}", location.Latitude, location.Longitude);
+            }
+            else
+            {
+                coordinates = "brak";
+            }*/
+        }
 	}
 }
 
