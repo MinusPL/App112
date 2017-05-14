@@ -110,11 +110,95 @@ namespace App112
             
             StackLayout bleedingSection = new StackLayout {
                 IsVisible = false, //Domyslnie ukryte
-                Children = { //Elementy w sekcji
-                    
+                Children = {
+                    new Label
+                    {
+                        Text = "Od kiedy?"
+                    },
+                    new Entry
+                    {
+
+                    },
+
+                    new Label
+                    {
+                        Text = "Jak mocny?"
+                    },
+                    new Entry
+                    {
+
+                    }
                 }
             };
 
+            StackLayout notAmputatedSection = new StackLayout {
+                IsVisible = false, //Domyslnie ukryte
+                Children = {
+                    new Label
+                    {
+                        Text = noFeel.Title
+                    },
+                    noFeel
+                }
+            };
+
+            StackLayout isLimbSection = new StackLayout {
+                IsVisible = false, //Domyslnie ukryte
+                Children = {
+                    new Label
+                    {
+                        Text = isAmputated.Title
+                    },
+                    isAmputated,
+                    notAmputatedSection
+                }
+            };
+
+            StackLayout isTakingDrugsSection = new StackLayout
+            {
+                IsVisible = false, //Domyslnie ukryte
+                Children =
+                {
+                    new Label
+                    {
+                        Text = "Jakie?"
+                    },
+                    new Entry
+                    {
+
+                    }
+                }
+            };
+
+            StackLayout isIllSection = new StackLayout
+            {
+                IsVisible = false, //Domyslnie ukryte
+                Children =
+                {
+                    new Label
+                    {
+                        Text = isTakingDrugs.Title
+                    },
+                    isTakingDrugs,
+                    isTakingDrugsSection
+                }
+            };
+
+            StackLayout otherSection = new StackLayout
+            {
+                IsVisible = false, //Domyslnie ukryte
+                Children =
+                {
+                    new Label
+                    {
+                        Text = "Opisz:"
+                    },
+                    new Entry
+                    {
+
+                    }
+                }
+            };
 
 
             //A to juz sa Eventy pickerow ktore reaguja na zmiane
@@ -126,6 +210,56 @@ namespace App112
                 else
                     breathingSection.IsVisible = false;
             };
+
+            bleeding.SelectedIndexChanged += (sender, args) =>
+            {
+                if (bleeding.SelectedIndex == 1)
+                    bleedingSection.IsVisible = true;
+                else
+                    bleedingSection.IsVisible = false;
+            };
+
+            isLimb.SelectedIndexChanged += (sender, args) =>
+            {
+                if (isLimb.SelectedIndex == 1)
+                    isLimbSection.IsVisible = true;
+                else
+                    isLimbSection.IsVisible = false;
+            };
+
+            isAmputated.SelectedIndexChanged += (sender, args) =>
+            {
+                if (isAmputated.SelectedIndex == 2)
+                    notAmputatedSection.IsVisible = true;
+                else
+                    notAmputatedSection.IsVisible = false;
+            };
+
+            isIll.SelectedIndexChanged += (sender, args) =>
+            {
+                if (isIll.SelectedIndex == 1)
+                    isIllSection.IsVisible = true;
+                else
+                    isIllSection.IsVisible = false;
+            };
+
+            isTakingDrugs.SelectedIndexChanged += (sender, args) =>
+            {
+                if (isTakingDrugs.SelectedIndex == 1)
+                    isTakingDrugsSection.IsVisible = true;
+                else
+                    isTakingDrugsSection.IsVisible = false;
+            };
+
+            otherSymptoms.SelectedIndexChanged += (sender, args) =>
+            {
+                if (otherSymptoms.SelectedIndex == 1)
+                    otherSection.IsVisible = true;
+                else
+                    otherSection.IsVisible = false;
+            };
+
+
 
 
             //I glowny Page
@@ -142,6 +276,72 @@ namespace App112
                         },
                         breathingProblems,
                         breathingSection,
+
+                        new Label
+                        {
+                            Text = "Jak doszło do urazu?"
+                        },
+                        new Entry
+                        {
+
+                        },
+
+                        new Label
+                        {
+                            Text = bleeding.Title
+                        },
+                        bleeding,
+                        bleedingSection,
+
+                        new Label
+                        {
+                            Text = "Podaj lokalizację urazu"
+                        },
+                        new Entry
+                        {
+
+                        },
+
+                        new Label
+                        {
+                            Text = isLimb.Title
+                        },
+                        isLimb,
+                        new Label
+                        {
+                            Text = "Podaj lokalizację urazu"
+                        },
+                        new Entry
+                        {
+
+                        },
+                        isLimbSection,
+
+                        new Label
+                        {
+                            Text = consciousness.Title
+                        },
+                        consciousness,
+
+                        new Label
+                        {
+                            Text = speakingProblems.Title
+                        },
+
+                        new Label
+                        {
+                            Text = isIll.Title
+                        },
+                        isIll,
+                        isIllSection,
+
+                        new Label
+                        {
+                            Text = otherSymptoms.Title
+                        },
+                        otherSymptoms,
+                        otherSection
+
                     }
                 } //StackLayout
             }; // ScrollView
