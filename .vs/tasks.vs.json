@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-PrzytomnyPages",
+      "appliesTo": "App112/App112/Pages/Pogotowie/PrzytomnyPages/",
+      "type": "command"
+    }
+  ]
+}
