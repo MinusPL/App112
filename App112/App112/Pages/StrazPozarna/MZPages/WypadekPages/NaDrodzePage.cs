@@ -115,7 +115,29 @@ namespace App112
 						victims,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails =
+                                    new List<KeyValuePair<string, string>> {
+                                        new KeyValuePair<string, string>("Kategioria", "KolizjaWypadek"),
+                                        new KeyValuePair<string, string>("Podkategoria", "NaDrodze")
+                                    };
+
+                                messageDetails.Add(new KeyValuePair<string, string>("TypZdarzenia", typeOfEvent.Items[typeOfEvent.SelectedIndex]));
+                                if (typeOfEvent.SelectedIndex != 0) {
+                                    messageDetails.Add(new KeyValuePair<string, string>("Pozar", isFire.Items[isFire.SelectedIndex]));
+                                    messageDetails.Add(new KeyValuePair<string, string>("CiezarowkaAutobus", isHugeVehicle.Items[isHugeVehicle.SelectedIndex]));
+                                    messageDetails.Add(new KeyValuePair<string, string>("NiebezpieczneMaterialy", isVehicleHasDangerousStuff.Items[isVehicleHasDangerousStuff.SelectedIndex]));
+                                }
+
+
+                                Entry numberOfVictims = (Entry) victims.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
+
+                                Entry numberOfTrapped = (Entry) trapped.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace App112
 {
@@ -57,7 +58,23 @@ namespace App112
                         trapped,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails =
+                                    new List<KeyValuePair<string, string>> {
+                                        new KeyValuePair<string, string>("Kategioria", "MiejscoweZagrozenie"),
+                                        new KeyValuePair<string, string>("Podkategoria", "KatastrofaBudowlana")
+                                    };
+
+                                messageDetails.Add(new KeyValuePair<string, string>("ZawalonyBudynek", isCollapsedBuilding.Items[isCollapsedBuilding.SelectedIndex]));
+
+                                Entry numberOfVictims = (Entry) victims.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
+
+                                Entry numberOfTrapped = (Entry) trapped.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

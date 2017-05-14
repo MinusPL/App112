@@ -8,8 +8,8 @@ using Xamarin.Forms;
 
 namespace App112 {
 #pragma warning disable 1591
-    public class NaWodzie : ContentPage {
-        public NaWodzie() {
+    public class NaWodziePage : ContentPage {
+        public NaWodziePage() {
 #pragma warning restore 1591
             StackLayout victims = new StackLayout {
                 IsVisible = true,
@@ -47,7 +47,19 @@ namespace App112 {
                         trapped,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails = new List<KeyValuePair<string, string>> {
+                                    new KeyValuePair<string, string>("Kategioria", "Wypadek"),
+                                    new KeyValuePair<string, string>("Podkategoria", "NaWodzie")
+                                };
+                                Entry numberOfVictims = (Entry) victims.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
+
+                                Entry numberOfTrapped = (Entry) trapped.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

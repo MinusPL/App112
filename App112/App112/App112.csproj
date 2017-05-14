@@ -76,6 +76,7 @@
     <Compile Include="Pages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Policja\PolicjaInnePage.cs" />
     <Compile Include="Pages\StrazPozarna\MZPages\MZKatastrofaBudowlanaPage.cs" />
     <Compile Include="Pages\StrazPozarna\MZPages\MZPlamaOleju.cs" />
     <Compile Include="Pages\StrazPozarna\MZPages\MZPodtopieniePage.cs" />
@@ -84,7 +85,11 @@
     <Compile Include="Pages\StrazPozarna\MZPages\MZUwiezioneZwierze.cs" />
     <Compile Include="Pages\StrazPozarna\MZPages\MZUwiezionyCzlowiek.cs" />
     <Compile Include="Pages\StrazPozarna\MZPages\MZWypadek.cs" />
-    <Compile Include="Pages\Policja\PolicjaInnePage.cs" />
+    <Compile Include="Pages\StrazPozarna\MZPages\WypadekPages\KolejowyPage.cs" />
+    <Compile Include="Pages\StrazPozarna\MZPages\WypadekPages\NaDrodzePage.cs" />
+    <Compile Include="Pages\StrazPozarna\MZPages\WypadekPages\NaWodziePage.cs" />
+    <Compile Include="Pages\StrazPozarna\MZPages\WypadekPages\SamolotowyPage.cs" />
+    <Compile Include="Pages\StrazPozarna\PozarPages\PozarBudynekMieszkalny.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarDroga.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarInne.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarInstytucje.cs" />
@@ -93,9 +98,8 @@
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarLotniczy.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarMagazyny.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarNaWodzie.cs" />
-    <Compile Include="Pages\StrazPozarna\PozarPages\PozarObiektyProdukcyjne.cs" />
-    <Compile Include="Pages\StrazPozarna\PozarPages\PozarBudynekMieszkalny.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarObiektyGospodarcze.cs" />
+    <Compile Include="Pages\StrazPozarna\PozarPages\PozarObiektyProdukcyjne.cs" />
     <Compile Include="Pages\StrazPozarna\PozarPages\PozarWysypiska.cs" />
     <Compile Include="Pages\StrazPozarna\StrazPozarnaPage.cs" />
     <Compile Include="Pages\StrazPozarna\StrazPozarnaPozarPage.cs" />

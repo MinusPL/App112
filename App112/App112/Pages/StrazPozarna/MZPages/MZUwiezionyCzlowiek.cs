@@ -33,7 +33,17 @@ namespace App112
                         inWhatWay,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails =
+                                    new List<KeyValuePair<string, string>> {
+                                        new KeyValuePair<string, string>("Kategioria", "MiejscoweZagrozenie"),
+                                        new KeyValuePair<string, string>("Podkategoria", "UwiezionyCzlowiek")
+                                    };
+
+                                messageDetails.Add(new KeyValuePair<string, string>("Jak", inWhatWay.Items[inWhatWay.SelectedIndex]));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

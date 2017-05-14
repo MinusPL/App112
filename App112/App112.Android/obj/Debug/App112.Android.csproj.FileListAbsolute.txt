@@ -198,3 +198,13 @@ E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.Abstractions.dll.mdb
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.dll.mdb
+E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll.mdb
+E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.Abstractions.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.Abstractions.xml
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.pdb
+E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.xml

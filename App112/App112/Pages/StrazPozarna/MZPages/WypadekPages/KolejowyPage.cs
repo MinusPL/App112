@@ -89,7 +89,25 @@ namespace App112
 						trapped,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails =
+                                    new List<KeyValuePair<string, string>> {
+                                        new KeyValuePair<string, string>("Kategioria", "Wypadek"),
+                                        new KeyValuePair<string, string>("Podkategoria", "Kolejowy")
+                                    };
+
+                                messageDetails.Add(new KeyValuePair<string, string>("ZderzenieZSamochodem", isCrashWithCar.Items[isCrashWithCar.SelectedIndex]));
+                                messageDetails.Add(new KeyValuePair<string, string>("MaterialyNiebezpieczne", isVehicleHasDangerousStuff.Items[isVehicleHasDangerousStuff.SelectedIndex]));
+                                messageDetails.Add(new KeyValuePair<string, string>("Pozar", isFire.Items[isFire.SelectedIndex]));
+
+                                Entry numberOfVictims = (Entry) victims.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
+
+                                Entry numberOfTrapped = (Entry) trapped.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

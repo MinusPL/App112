@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System.Collections.Generic;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace App112 {
@@ -6,10 +7,25 @@ namespace App112 {
 	#pragma warning disable 1591
 	public partial class App : Application {
 
+        private float latitude;
+        private float longitude;
+
+
 		public App() {
 			InitializeComponent();
 			MainPage = new NavigationPage(new MainPage());
 		}
+
+        public void setCoords(float par1, float par2)
+        {
+            latitude = par1;
+            latitude = par2;
+        }
+
+        public KeyValuePair<float, float> getCoords()
+        {
+            return new KeyValuePair<float, float>(latitude, longitude);
+        }
 
 		protected override void OnStart() {}
 		protected override void OnSleep() {}

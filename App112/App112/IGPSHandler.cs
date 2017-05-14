@@ -6,6 +6,6 @@ namespace App112
     {
         bool IsGPSEnabled();
         void OpenGPSSettings();
-        string GetLocation();
+       // string GetLocation();
     }
 }

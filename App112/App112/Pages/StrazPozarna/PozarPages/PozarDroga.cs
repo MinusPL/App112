@@ -86,7 +86,25 @@ namespace App112
                         trapped,
                         new Button {
                             Text = "Zatwierdź",
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => {
+                                List<KeyValuePair<string, string>> messageDetails = new List<KeyValuePair<string, string>> {
+                                    new KeyValuePair<string, string>("Kategioria", "Pozar"),
+                                    new KeyValuePair<string, string>("Podkategoria", "TransportDrogowy")
+                                };
+                                messageDetails.Add(new KeyValuePair<string, string>("SubstancjeNiebezpieczne", isVehicleWithChemicalsPicker.Items[isVehicleWithChemicalsPicker.SelectedIndex]));
+                                if (isVehicleWithChemicalsPicker.SelectedIndex == 1) {
+                                    Entry whatChemilas = (Entry) chemicalsSection.Children[1];
+                                    messageDetails.Add(new KeyValuePair<string, string>("NumerSubstancji", whatChemilas.Text));
+                                }
+
+                                Entry numberOfVictims = (Entry) victims.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
+
+                                Entry numberOfTrapped = (Entry) trapped.Children[1];
+                                messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
+
+                                throw new NotImplementedException();
+                            })
                         }
                     }
                 }

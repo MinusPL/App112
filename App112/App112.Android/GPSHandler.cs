@@ -16,12 +16,8 @@ using Xamarin.Forms;
 [assembly: Xamarin.Forms.Dependency(typeof(GPSHandler))]
 namespace App112.Droid
 {
-    public class GPSHandler : ILocationListener, IGPSHandler
+    public class GPSHandler : IGPSHandler
     {
-        private string loc = "KUUURWA MAAAAAAć";
-
-        public IntPtr Handle => throw new NotImplementedException();
-
         public bool IsGPSEnabled()
         {
             LocationManager _locationManager = (LocationManager)GetContext().GetSystemService(Context.LocationService);
@@ -43,43 +39,9 @@ namespace App112.Droid
             Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new Pages.GPSDisclaimer());
         }
 
-
-        public string GetLocation()
-        {
-            return loc;
-        }
-
         private static Context GetContext()
         {
             return Android.App.Application.Context;
-        }
-
-        public void OnLocationChanged(Location location)
-        {
-            if (location != null)
-            {
-                loc = string.Format("SZ: {0}, DŁ: {1}", location.Latitude, location.Longitude);
-            }
-            else
-            {
-                loc = "Nie udało pobrać się lokalizacji, spróbuj ponownie później";
-            }
-        }
-
-        public void OnProviderDisabled(string provider)
-        {
-        }
-
-        public void OnProviderEnabled(string provider)
-        {
-        }
-
-        public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
-        {
-        }
-
-        public void Dispose()
-        {
         }
     }
 }

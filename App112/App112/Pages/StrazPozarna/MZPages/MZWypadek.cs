@@ -20,22 +20,22 @@ namespace App112
                         new Button {
                             Text = "Na drodze",
                             BackgroundColor = Color.White,
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => Navigation.PushAsync(new NaDrodzePage()))
                         },
                         new Button {
                             Text = "Kolejowy",
                             BackgroundColor = Color.White,
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => Navigation.PushAsync(new KolejowyPage()))
                         },
                         new Button {
                             Text = "Samolotowy",
                             BackgroundColor = Color.White,
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => Navigation.PushAsync(new SamolotowyPage()))
                         },
                         new Button {
                             Text = "Na wodzie",
                             BackgroundColor = Color.White,
-                            Command = new Command(() => throw new NotImplementedException())
+                            Command = new Command(() => Navigation.PushAsync(new NaWodziePage()))
                         }
                     }
                 } // StackLayout

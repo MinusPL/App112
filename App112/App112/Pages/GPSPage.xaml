@@ -7,6 +7,8 @@
     <StackLayout Padding="10">
       <Label Text="Aplikacja pobiera lokalizację GPS" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <ActivityIndicator Color="Red" IsRunning="true" />
+            <Label x:Name="dataCoords" Text="{Binding coords}"/>
+
         </StackLayout>
   </ScrollView>
 </ContentPage>
