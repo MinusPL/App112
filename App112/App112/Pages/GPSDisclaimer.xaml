@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App112.Pages.GPSDisclaimer"
+             Title="Ostrzeżenie o GPS">
+  <ScrollView>
+    <StackLayout Padding="10">
+      <Label Text="Wykorzystanie GPS" FontSize="40"/>
+            <Label Text="Aplikacja korzysta z lokalizacji GPS w celu dokładnego określenia miejsca zdarzenia. Jeśli aktualnie na twoim urządzeniu GPS jest wyłączony zostaniesz przeniesiony do ekranu ustawień GPS w celu jego włączenia."/>
+            <Button Text="Rozumiem"
+						Clicked="BtnRegisterClick"
+						BackgroundColor="{StaticResource Primary}"
+						TextColor="White"/>
+        </StackLayout>
+  </ScrollView>
+</ContentPage>

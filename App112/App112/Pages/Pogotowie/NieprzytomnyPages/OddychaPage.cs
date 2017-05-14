@@ -186,6 +186,7 @@ namespace App112
                                         messageDetails.Add(new KeyValuePair<string, string>("Jakie leki", entry.Text));
                                     }
                                 }
+                                Navigation.PushAsync (new Pages.GPSPage ());
                             })
                         }
                     }

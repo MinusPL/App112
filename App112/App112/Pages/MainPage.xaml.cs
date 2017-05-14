@@ -10,8 +10,9 @@ namespace App112 {
 		}
 
 		private void BtnAcceptClick(object sender, System.EventArgs e) {
-			Application.Current.MainPage = new NavigationPage(new RegisterPage());
-		}
-	}
+            //Application.Current.MainPage = new NavigationPage(new RegisterPage());
+            Application.Current.MainPage = new NavigationPage(new Pages.GPSDisclaimer());
+        }
+    }
 	#pragma warning restore 1591
 }

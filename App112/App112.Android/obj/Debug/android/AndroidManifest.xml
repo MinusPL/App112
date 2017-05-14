@@ -8,6 +8,8 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <application android:name="android.app.Application" android:allowBackup="true" android:label="com.qrchack.app112" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="App112" android:theme="@style/MainTheme" android:name="md53b57bdac4551a94ed6976adc0501e582.MainActivity">
       <intent-filter>
