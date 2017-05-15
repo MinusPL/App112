@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using App112.Database;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,27 +8,27 @@ namespace App112 {
 	#pragma warning disable 1591
 	public partial class App : Application {
 
-        private float latitude;
-        private float longitude;
+        static DDatabase database;
 
 
-		public App() {
+        public App() {
 			InitializeComponent();
 			MainPage = new NavigationPage(new MainPage());
 		}
 
-        public void setCoords(float par1, float par2)
+        public static DDatabase Database
         {
-            latitude = par1;
-            latitude = par2;
+            get
+            {
+                if (database == null)
+                {
+                    database = new DDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("reports.db3"));
+                }
+                return database;
+            }
         }
 
-        public KeyValuePair<float, float> getCoords()
-        {
-            return new KeyValuePair<float, float>(latitude, longitude);
-        }
-
-		protected override void OnStart() {}
+        protected override void OnStart() {}
 		protected override void OnSleep() {}
 		protected override void OnResume() {}
 
