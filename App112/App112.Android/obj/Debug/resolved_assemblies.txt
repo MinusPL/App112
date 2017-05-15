@@ -27,9 +27,7 @@ E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Diagnostics.Tools
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Collections.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
-E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.ObjectModel.dll
-E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.ComponentModel.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\System.Reflection.dll

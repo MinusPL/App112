@@ -41,6 +41,20 @@
             <param name="source">Where the message is sent to</param>
             <param name="text">Message body</param>
         </member>
+        <member name="M:App112.Pages.ConfirmPage.SendSMS(System.String,System.String,System.String)">
+            <summary>
+            Wrapper for <see cref="T:App112.ISMSHandler"/>'s SendSMS
+            </summary>
+            <param name="destination"></param>
+            <param name="source"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:App112.Pages.ConfirmPage.GetSMSDependency">
+            <summary>
+            Returns ISMSHandler methods from the <see cref="T:Xamarin.Forms.DependencyService"/> for quicker access
+            </summary>
+            <returns><see cref="T:App112.ISMSHandler"/> for quicker access to its methods</returns>
+        </member>
         <member name="T:App112.ImageButton">
             <summary>
             A custom button with a <see cref="T:Xamarin.Forms.Label"/> and <see cref="T:Xamarin.Forms.Image"/> below it, plus tap callbacks

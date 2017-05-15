@@ -42,3 +42,5 @@ E:\Dupa8\App112\App112\bin\Debug\Plugin.Geolocator.xml
 E:\Dupa8\App112\App112\bin\Debug\Plugin.Geolocator.Abstractions.pdb
 E:\Dupa8\App112\App112\bin\Debug\Plugin.Geolocator.Abstractions.xml
 E:\Dupa8\App112\App112\obj\Debug\App112.Pages.GPSDisclaimer.xaml.g.cs
+E:\Dupa8\App112\App112\obj\Debug\App112.Pages.LocationPage.xaml.g.cs
+E:\Dupa8\App112\App112\obj\Debug\App112.Pages.ConfirmPage.xaml.g.cs

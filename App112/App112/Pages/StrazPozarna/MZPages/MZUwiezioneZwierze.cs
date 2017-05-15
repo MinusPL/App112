@@ -42,7 +42,7 @@ namespace App112
 
                                 messageDetails.Add(new KeyValuePair<string, string>("Jak", inWhatWay.Items[inWhatWay.SelectedIndex]));
 
-                                throw new NotImplementedException();
+                                Navigation.PushAsync (new Pages.GPSPage (messageDetails));
                             })
                         }
                     }

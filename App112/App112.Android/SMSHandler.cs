@@ -5,6 +5,7 @@ using Android.Telephony;
 using Android.Util;
 using App112.Droid;
 using Java.Lang;
+using System.Collections.Generic;
 
 [assembly: Xamarin.Forms.Dependency(typeof(SMSHandler))]
 namespace App112.Droid {
@@ -25,7 +26,9 @@ namespace App112.Droid {
 			RegisterReceiver();
 			try {
 				Log.Info("App112", "Sending SMS message...");
-				SmsManager.Default.SendTextMessage(destination, source, text, GetSentIntent(GetContext()), null);
+				//SmsManager.Default.SendTextMessage(destination, source, text, GetSentIntent(GetContext()), null);
+                IList<string> parts = SmsManager.Default.DivideMessage(text);
+                SmsManager.Default.SendMultipartTextMessage(destination, source, parts, null, null);
 			}
 			catch (IllegalArgumentException e) {
 				Log.Wtf("App112", "Error sending SMS message: Destination or text are empty" + e.Message);
@@ -40,7 +43,7 @@ namespace App112.Droid {
 		/// <param name="text"></param>
 		private static void ValidateInput(string destination, string source, string text)  {
 			if (string.IsNullOrEmpty(destination)) throw new ArgumentException("Value cannot be null or empty.", nameof(destination));
-			if (string.IsNullOrEmpty(source)) throw new ArgumentException("Value cannot be null or empty.", nameof(source));
+			//if (string.IsNullOrEmpty(source)) throw new ArgumentException("Value cannot be null or empty.", nameof(source));
 			if (string.IsNullOrEmpty(text)) throw new ArgumentException("Value cannot be null or empty.", nameof(text));
 		}
 

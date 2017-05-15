@@ -166,7 +166,7 @@ namespace App112
                                 Entry numberOfTrapped = (Entry) trapped.Children[1];
                                 messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
 
-                                throw new NotImplementedException();
+                                Navigation.PushAsync (new Pages.GPSPage (messageDetails));
                             })
                         }
                     }

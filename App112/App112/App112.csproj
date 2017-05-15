@@ -42,6 +42,9 @@
     <Compile Include="IGPSHandler.cs" />
     <Compile Include="IMessage.cs" />
     <Compile Include="ISMSHandler.cs" />
+    <Compile Include="Pages\ConfirmPage.xaml.cs">
+      <DependentUpon>ConfirmPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\GPSDisclaimer.xaml.cs">
       <DependentUpon>GPSDisclaimer.xaml</DependentUpon>
     </Compile>
@@ -49,6 +52,9 @@
       <DependentUpon>GPSPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ImageButton.cs" />
+    <Compile Include="Pages\LocationPage.xaml.cs">
+      <DependentUpon>LocationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -168,6 +174,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\GPSDisclaimer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\LocationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ConfirmPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

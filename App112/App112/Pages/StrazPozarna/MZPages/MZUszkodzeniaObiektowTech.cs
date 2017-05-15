@@ -47,7 +47,7 @@ namespace App112
                                 Entry numberOfVictims = (Entry) victims.Children[1];
                                 messageDetails.Add(new KeyValuePair<string, string>("Poszkodowani", numberOfVictims.Text));
 
-                                throw new NotImplementedException();
+                                Navigation.PushAsync (new Pages.GPSPage (messageDetails));
                             })
                         }
                     }

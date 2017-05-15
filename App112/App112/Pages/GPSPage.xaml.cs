@@ -16,54 +16,29 @@ namespace App112.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GPSPage : ContentPage
     {
-        public GPSPage()
+        private List<KeyValuePair<string, string>> _list;
+        public GPSPage(List<KeyValuePair<string, string>> _tempList)
         {
+            _list = _tempList;
             InitializeComponent();
-            //dataCoords.Text = "KURWA JEGO MAć PIERDOLONA";
         }
 
         protected async override void OnAppearing()
         {
-            base.OnAppearing();
+            Application.Current.MainPage = new NavigationPage(new LocationPage(_list));
+            /*base.OnAppearing();
             try
             { 
                 var locator = CrossGeolocator.Current;
                 locator.DesiredAccuracy = 50;               
-                var position = await locator.GetPositionAsync(timeoutMilliseconds: 50000);
+                var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
 
-                dataCoords.Text = string.Format("LATT: {0}, LONT: {1}", position.Latitude, position.Longitude);
+                //dataCoords.Text = string.Format("LATT: {0}, LONT: {1}", position.Latitude, position.Longitude);
             }
             catch(Exception e)
             { 
                 throw;
-            }
-            /*var locator = CrossGeolocator.Current;
-            locator.DesiredAccuracy = 50;
-            dataCoords.Text = "Getting gps";
-
-            var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-
-            if (position == null)
-            {
-                dataCoords.Text = "null gps :(";
-                return;
-            }
-            else
-            {
-                dataCoords.Text = "JEEEST";
             }*/
         }
-
-        private string GetLocation()
-        {
-            return "";
-            //return GetGPSDependency().GetLocation();
-        }
-
-        private static IGPSHandler GetGPSDependency()
-        {
-            return DependencyService.Get<IGPSHandler>();
-        }
-
     }
 }

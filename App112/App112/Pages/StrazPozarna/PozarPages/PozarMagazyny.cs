@@ -41,7 +41,7 @@ namespace App112
                         FontSize = 18
                     },
                     new Entry {
-                        Keyboard = Keyboard.Numeric
+                        
                     }
                 }
             };
@@ -131,7 +131,7 @@ namespace App112
 
                             messageDetails.Add(new KeyValuePair<string, string>("CzyZnanyMaterial", isKnowingMaterialPicker.Items[isKnowingMaterialPicker.SelectedIndex]));
 
-                            if (isKnowingMaterialPicker.SelectedIndex == 1) {
+                            if (isKnowingMaterialPicker.SelectedIndex == 0) {
                                 Entry colorOfFog = (Entry) colorOfFogSection.Children[1];
                                 messageDetails.Add(new KeyValuePair<string, string>("KolorDymu", colorOfFog.Text));
                             }
@@ -146,7 +146,7 @@ namespace App112
                             Entry numberOfTrapped = (Entry) trapped.Children[1];
                             messageDetails.Add(new KeyValuePair<string, string>("Uwiezieni", numberOfTrapped.Text));
 
-                            throw new NotImplementedException();
+                            Navigation.PushAsync (new Pages.GPSPage (messageDetails));
                         })
                         }
                     }

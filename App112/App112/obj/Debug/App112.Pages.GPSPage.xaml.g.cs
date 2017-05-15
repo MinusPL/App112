@@ -17,12 +17,8 @@ namespace App112.Pages {
     public partial class GPSPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label dataCoords;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(GPSPage));
-            dataCoords = this.FindByName<global::Xamarin.Forms.Label>("dataCoords");
         }
     }
 }

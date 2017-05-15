@@ -113,8 +113,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"Plugin.Geolocator.Abstractions.dll",
-		"Plugin.Geolocator.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
