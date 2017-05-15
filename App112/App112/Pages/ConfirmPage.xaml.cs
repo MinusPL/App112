@@ -26,7 +26,11 @@ namespace App112.Pages
 
         private void BtnMessageSend()
         {
-            SendSMS("661030549", null, _message);
+            SendSMS("0048661030549", null, _message);
+            Database.DReport msg = new Database.DReport();
+            msg.reportID = "SIalala";
+            msg.reportDate = string.Format("{0} - {1}", DependencyService.Get<IDeviceServiceInfo>()?.ConvertToDeviceShortDateFormat(DateTime.Now), DependencyService.Get<IDeviceServiceInfo>()?.ConvertToDeviceTimeFormat(DateTime.Now));
+            App.Database.AddReport(msg);
             Application.Current.MainPage = new NavigationPage(new SelectPage());
             DisplayAlert("Zgłoszenie wysłane", "Twoje zgłoszenie zostało wysłane", "Zamknij");
         }

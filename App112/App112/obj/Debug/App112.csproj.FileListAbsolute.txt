@@ -44,3 +44,8 @@ E:\Dupa8\App112\App112\bin\Debug\Plugin.Geolocator.Abstractions.xml
 E:\Dupa8\App112\App112\obj\Debug\App112.Pages.GPSDisclaimer.xaml.g.cs
 E:\Dupa8\App112\App112\obj\Debug\App112.Pages.LocationPage.xaml.g.cs
 E:\Dupa8\App112\App112\obj\Debug\App112.Pages.ConfirmPage.xaml.g.cs
+E:\Dupa8\App112\App112\bin\Debug\SQLite-net.dll
+E:\Dupa8\App112\App112\bin\Debug\SQLitePCLRaw.batteries_green.dll
+E:\Dupa8\App112\App112\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+E:\Dupa8\App112\App112\bin\Debug\SQLitePCLRaw.core.dll
+E:\Dupa8\App112\App112\bin\Debug\SQLite-net.xml

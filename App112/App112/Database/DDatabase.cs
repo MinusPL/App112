@@ -15,6 +15,7 @@ namespace App112.Database
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<DMessage>().Wait();
+            database.CreateTableAsync<DReport>().Wait();
         }
 
         public Task<List<DMessage>> GetMessagesFromReport(string reportID)

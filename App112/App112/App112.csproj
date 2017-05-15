@@ -42,6 +42,7 @@
     <Compile Include="Database\DDatabase.cs" />
     <Compile Include="Database\DMessage.cs" />
     <Compile Include="Database\DReport.cs" />
+    <Compile Include="IDeviceServiceInfo.cs" />
     <Compile Include="IFileHelper.cs" />
     <Compile Include="IGPSHandler.cs" />
     <Compile Include="IMessage.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Pages\GPSPage.xaml.cs">
       <DependentUpon>GPSPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HistoryPage.cs" />
     <Compile Include="Pages\ImageButton.cs" />
     <Compile Include="Pages\LocationPage.xaml.cs">
       <DependentUpon>LocationPage.xaml</DependentUpon>

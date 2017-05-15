@@ -202,3 +202,12 @@ E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.Abstractions.dll.mdb
 E:\Dupa8\App112\App112.Android\bin\Debug\Plugin.Geolocator.dll.mdb
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.Abstractions.dll.mdb
 E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLite-net.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLitePCLRaw.batteries_green.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLitePCLRaw.core.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLite-net.xml
+E:\Dupa8\App112\App112.Android\bin\Debug\SQLite-net.dll.mdb
+E:\Dupa8\App112\App112.Android\obj\Debug\android\assets\SQLite-net.dll.mdb

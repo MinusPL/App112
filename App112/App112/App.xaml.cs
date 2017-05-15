@@ -1,7 +1,7 @@
-﻿using App112.Database;
-using System.Collections.Generic;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using App112.Database;
 
 namespace App112 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,6 +23,7 @@ namespace App112 {
                 if (database == null)
                 {
                     database = new DDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("reports.db3"));
+                    //Log.Info("App112", "Sending SMS message...");
                 }
                 return database;
             }

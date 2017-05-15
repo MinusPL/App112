@@ -31,8 +31,8 @@ namespace App112 {
 			mainGrid.Children.Add(
 				ImageButton.Create(
 					"Historia", "historia.png", 64,
-					new Command(() => ShowMessage("Historia"))),
-				0, 1
+                    new Command(() => Navigation.PushAsync(new Pages.HistoryPage()))),
+                0, 1
 			);
 			mainGrid.Children.Add(
 				ImageButton.Create(

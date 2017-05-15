@@ -7,6 +7,6 @@ namespace App112.Database
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string reportID { get; set; }
-        public string reportThumb { get; set; }
+        public string reportDate { get; set; }
     }
 }

@@ -13,7 +13,8 @@ namespace App112.Droid
     {
         public string GetLocalFilePath(string filename)
         {
-            string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            Console.WriteLine(Path.Combine(path, filename));
             return Path.Combine(path, filename);
         }
     }
